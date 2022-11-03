@@ -7,5 +7,4 @@ curl localhost:80
 exit
 cd
 la
-touch .hushlogin
 exit
