@@ -16,5 +16,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", path: "files/install.nginx.sh"
   config.vm.provision "shell", path: "files/disable.banner.sh"
+  config.vm.provision "shell", path: "files/install.tools.sh"
 
 end
