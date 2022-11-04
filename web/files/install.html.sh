@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sudo cp /home/vagrant/index.html /var/www/html/
+sudo mv /home/vagrant/index.html /var/www/html/
+sudo rm /var/www/html/index.nginx-debian.html
