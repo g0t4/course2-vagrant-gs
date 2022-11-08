@@ -2,6 +2,10 @@
   tasks:
     - ansible.builtin.debug:
         msg: "testing 1 2 3!!!"
+    - name: "use most as default PAGER"
+      ansible.builtin.lineinfile:
+        path: "/home/vagrant/.bashrc"
+        line: "export PAGER=most"
 
 - name: "package installs"
   hosts: all
