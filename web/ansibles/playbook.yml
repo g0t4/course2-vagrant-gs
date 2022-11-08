@@ -2,3 +2,11 @@
   tasks:
     - ansible.builtin.debug:
         msg: "testing 1 2 3!!!"
+
+- name: "package installs"
+  hosts: all
+  become: true
+  tasks:
+    - ansible.builtin.apt:
+        update_cache: true
+        name: most
