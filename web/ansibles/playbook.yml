@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+    - ansible.builtin.debug:
+        msg: "testing 1 2 3!!!"
