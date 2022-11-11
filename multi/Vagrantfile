@@ -7,4 +7,12 @@ Vagrant.configure("2") do |config|
   config.vm.define "web" do |web|
   end
 
+  config.vm.define "db" do |db|
+    db.vm.box = "centos/7"
+  end
+
+  config.vm.define "cache" do |cache|
+    cache.vm.box = "ubuntu/kinetic64"
+  end
+
 end
