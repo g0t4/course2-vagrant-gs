@@ -46,3 +46,19 @@ These are the course exercise files. Review the commit history if you want to mo
     - [debian](https://app.vagrantup.com/debian)
     - [archlinux](https://app.vagrantup.com/archlinux/boxes/archlinux)
 - [packer.io](https://www.packer.io/) - building your own boxes
+
+## PowerShell
+
+```powershell
+
+# change options
+Get-PSReadLineOption | select PredictionSource, PredictionViewStyle
+Set-PSReadLineOption -PredictionSource History -PredictionViewStyle InlineView
+# PredictionViewStyle: ListView or InlineView
+# PredictionSource: History, Plugin, HistoryAndPlugin, None
+
+# keys:
+Get-PSReadLineKeyHandler -Bound -UnBound | where -Property Group -EQ Prediction
+Set-PSReadLineKeyHandler -Key "Shift+RightArrow" -Function AcceptNextSuggestionWord # InlineView only
+
+```
