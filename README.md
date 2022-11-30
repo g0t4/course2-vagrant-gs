@@ -2,6 +2,8 @@
 
 These are the course exercise files. Review the commit history if you want to more easily follow along.
 
+Course page: https://www.pluralsight.com/courses/vagrant-getting-started
+
 ## Resources
 
 - [vagrantup.com](http://vagrantup.com/)
